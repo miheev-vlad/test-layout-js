@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: lightseagreen;
+  font-size: 2.7rem;
+  letter-spacing: 15px;
+}
+
+.slider {
+  width: 750px;
+  margin-bottom: 130px;
+  position: relative;
+  margin: auto;
+}
+
+#slide {
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+#slide img {
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slider .prev,
+.slider .next {
+  cursor: pointer;
+  position: absolute;
+  top: 140px;
+  width: auto;
+  padding: 16px;
+  color: lightsteelblue;
+  font-weight: bold;
+  font-size: 34px;
+  border-radius: 3px;
+}
+
+.slider .next {
+  right: -50px;
+}
+
+.slider .prev {
+  left: -50px;
+}
+
+.slider .prev:hover,
+.slider .next:hover {
+  color: lightseagreen;
+  text-shadow: 2px 2px 5px darkslategray;
+}
+
+.slider-dots {
+  text-align: center;
+}
+
+.slider-dots_item {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 15px;
+  margin-top: 10px;
+  background-color: lightsteelblue;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active,
+.slider-dots_item:hover {
+  background-color: lightseagreen;
+  box-shadow: 2px 2px 5px darkslategray;
+}
+
+.selector {
+  align-items: center;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.size-select {
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
